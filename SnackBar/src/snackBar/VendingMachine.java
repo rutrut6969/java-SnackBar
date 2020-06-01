@@ -1,6 +1,6 @@
 package snackBar;
 
-public class VendingMaching {
+public class VendingMachine {
     // maxId - keep track of last used vending machine id
     private int maxId = 0;
 
@@ -10,7 +10,7 @@ public class VendingMaching {
     //name
     private String name;
 
-    public VendingMaching(String[] name){
+    public VendingMachine(String name){
         // Auto Incrementing the ID
         maxId += maxId;
 

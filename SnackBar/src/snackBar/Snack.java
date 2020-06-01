@@ -1,6 +1,6 @@
 package snackBar;
 
-public class Snack(){
+public class Snack{
 
     // maxId - keep track of last used snack id
     // To keep track of the ID's
@@ -23,7 +23,7 @@ public class Snack(){
     private int vendID;
 
     // Create a method to create a snack;
-    public Snack(String[] name, int quantity, double cost, int vendID){
+    public Snack(String name, int quantity, double cost, int vendID){
         // increment the ID;
         maxId++;
         id=maxId;
@@ -53,7 +53,7 @@ public class Snack(){
         return cost;
     }
 
-    public void setCost(double cost){
+    public void setCost(int cost){
         this.cost = cost;
     }
 
@@ -73,17 +73,17 @@ public class Snack(){
 
     //add quantity when given how many to add
     public void addQuantity(int quantity){
-        this.quatity += quantity;
+        this.quantity += quantity;
     }
 
     //buy snack when given how many to buy
     public void buySnack(int quantity){
-        this.quantity -= quantity
+        this.quantity -= quantity;
     }
 
     //get total cost given a quantity
-    public int totalOnQuan(int quantity){
-        int total = quantity * cost;
+    public double totalOnQuan(int quantity){
+        double total = quantity * cost;
         return total;
     }
 

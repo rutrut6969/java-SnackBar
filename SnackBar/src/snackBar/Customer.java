@@ -12,9 +12,9 @@ public class Customer{
     private String name;
 
     //cash on hand
-    private int cash;
+    private double cash;
 
-    public Customer(String name, int cash){
+    public Customer(String name, double cash){
         // Auto increment maxID;
         maxID += maxID;
 
@@ -40,7 +40,7 @@ public class Customer{
     }
 
     //add cash to cash on hand
-    public void addCash(double moreCash){
+    public void addCash(int moreCash){
         this.cash += moreCash;
     }
 
