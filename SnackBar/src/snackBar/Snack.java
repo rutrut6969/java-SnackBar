@@ -62,7 +62,7 @@ public class Snack(){
         return vendID;
     }
 
-    public void setVendID(vendID){
+    public void setVendID(int vendID){
         this.vendID = vendID;
     }
 
@@ -72,17 +72,17 @@ public class Snack(){
     }
 
     //add quantity when given how many to add
-    public void addQuantity(quantity){
+    public void addQuantity(int quantity){
         this.quatity += quantity;
     }
 
     //buy snack when given how many to buy
-    public void buySnack(quantity){
+    public void buySnack(int quantity){
         this.quantity -= quantity
     }
 
     //get total cost given a quantity
-    public int totalOnQuan(quantity){
+    public int totalOnQuan(int quantity){
         int total = quantity * cost;
         return total;
     }

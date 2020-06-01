@@ -31,9 +31,7 @@ public class VendingMaching {
         return name;
     }
 
-    public void name(name){
+    public void name(String name){
         this.name = name;
     }
-
-
 }
